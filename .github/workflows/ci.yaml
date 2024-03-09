@@ -1,4 +1,4 @@
-name: AWS CDK API GATEWAY  CI
+name: CI -> AWS CDK API GATEWAY & DynamoDB  
 
 on:
     push:
@@ -46,7 +46,3 @@ jobs:
 
       - name: Diff AWS CDK Stack
         run: "npx cdk diff ApiLambdaCrudDynamoDBStack --ci --require-approval never --no-asset-metadata"
-        # env:
-        #   AWS_ACCESS_KEY_ID: ${{ env.AWS_ACCESS_KEY_ID }}
-        #   AWS_SECRET_ACCESS_KEY: ${{ env.AWS_SECRET_ACCESS_KEY }}
-        #   AWS_DEFAULT_REGION: ${{ env.AWS_DEFAULT_REGION}}
