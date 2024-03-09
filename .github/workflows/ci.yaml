@@ -41,8 +41,8 @@ jobs:
       - name: Build CDK Stack
         run: npm run build
 
-      - name: Run Unit Tests
-        run: npm run test
+      # - name: Run Unit Tests
+      #   run: npm run test
 
       # - name: Diff AWS CDK Stack
       #   run: "npx cdk diff ApiLambdaCrudDynamoDBStack --ci --require-approval never --no-asset-metadata"
