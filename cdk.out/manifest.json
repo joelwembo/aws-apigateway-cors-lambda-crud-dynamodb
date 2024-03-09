@@ -1,0 +1,357 @@
+{
+  "version": "36.0.0",
+  "artifacts": {
+    "ApiLambdaCrudDynamoDBExample.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "ApiLambdaCrudDynamoDBExample.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "ApiLambdaCrudDynamoDBExample": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "ApiLambdaCrudDynamoDBExample.template.json",
+        "terminationProtection": false,
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/645606ff7716317a978a6694eab0e979801c145ae2aa091e53d5f31f1e11cea6.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "ApiLambdaCrudDynamoDBExample.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-lookup-role-${AWS::AccountId}-${AWS::Region}",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        }
+      },
+      "dependencies": [
+        "ApiLambdaCrudDynamoDBExample.assets"
+      ],
+      "metadata": {
+        "/ApiLambdaCrudDynamoDBExample": [
+          {
+            "type": "aws:cdk:warning",
+            "data": "If you are relying on AWS SDK v2 to be present in the Lambda environment already, please explicitly configure a NodeJS runtime of Node 16 or lower. [ack: @aws-cdk/aws-lambda-nodejs:sdkV2NotInRuntime]",
+            "trace": [
+              "Annotations.addMessage (C:\\Users\\joelw\\Desktop\\Office\\production\\prodxcloud\\prodxcloud-operations\\aws-cdk\\aws-cdk-examples\\typescript\\api-cors-lambda-crud-dynamodb\\node_modules\\aws-cdk-lib\\core\\lib\\annotations.js:1:1608)",
+              "Annotations.addWarningV2 (C:\\Users\\joelw\\Desktop\\Office\\production\\prodxcloud\\prodxcloud-operations\\aws-cdk\\aws-cdk-examples\\typescript\\api-cors-lambda-crud-dynamodb\\node_modules\\aws-cdk-lib\\core\\lib\\annotations.js:1:825)",
+              "new Bundling (C:\\Users\\joelw\\Desktop\\Office\\production\\prodxcloud\\prodxcloud-operations\\aws-cdk\\aws-cdk-examples\\typescript\\api-cors-lambda-crud-dynamodb\\node_modules\\aws-cdk-lib\\aws-lambda-nodejs\\lib\\bundling.js:1:2955)",
+              "Function.bundle (C:\\Users\\joelw\\Desktop\\Office\\production\\prodxcloud\\prodxcloud-operations\\aws-cdk\\aws-cdk-examples\\typescript\\api-cors-lambda-crud-dynamodb\\node_modules\\aws-cdk-lib\\aws-lambda-nodejs\\lib\\bundling.js:1:960)",
+              "new NodejsFunction (C:\\Users\\joelw\\Desktop\\Office\\production\\prodxcloud\\prodxcloud-operations\\aws-cdk\\aws-cdk-examples\\typescript\\api-cors-lambda-crud-dynamodb\\node_modules\\aws-cdk-lib\\aws-lambda-nodejs\\lib\\function.js:1:1729)",
+              "new ApiLambdaCrudDynamoDBStack (C:\\Users\\joelw\\Desktop\\Office\\production\\prodxcloud\\prodxcloud-operations\\aws-cdk\\aws-cdk-examples\\typescript\\api-cors-lambda-crud-dynamodb\\index.ts:42:26)",
+              "Object.<anonymous> (C:\\Users\\joelw\\Desktop\\Office\\production\\prodxcloud\\prodxcloud-operations\\aws-cdk\\aws-cdk-examples\\typescript\\api-cors-lambda-crud-dynamodb\\index.ts:130:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1241:14)",
+              "Module.m._compile (C:\\Users\\joelw\\AppData\\Local\\npm-cache\\_npx\\1bf7c3c15bf47d04\\node_modules\\ts-node\\src\\index.ts:1618:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1295:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\joelw\\AppData\\Local\\npm-cache\\_npx\\1bf7c3c15bf47d04\\node_modules\\ts-node\\src\\index.ts:1621:12)",
+              "Module.load (node:internal/modules/cjs/loader:1091:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:938:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:83:12)",
+              "phase4 (C:\\Users\\joelw\\AppData\\Local\\npm-cache\\_npx\\1bf7c3c15bf47d04\\node_modules\\ts-node\\src\\bin.ts:649:14)",
+              "bootstrap (C:\\Users\\joelw\\AppData\\Local\\npm-cache\\_npx\\1bf7c3c15bf47d04\\node_modules\\ts-node\\src\\bin.ts:95:10)",
+              "main (C:\\Users\\joelw\\AppData\\Local\\npm-cache\\_npx\\1bf7c3c15bf47d04\\node_modules\\ts-node\\src\\bin.ts:55:10)",
+              "Object.<anonymous> (C:\\Users\\joelw\\AppData\\Local\\npm-cache\\_npx\\1bf7c3c15bf47d04\\node_modules\\ts-node\\src\\bin.ts:800:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1241:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1295:10)",
+              "Module.load (node:internal/modules/cjs/loader:1091:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:938:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:83:12)",
+              "node:internal/main/run_main_module:23:47"
+            ]
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/items": [
+          {
+            "type": "aws:cdk:hasPhysicalName",
+            "data": {
+              "Ref": "items07D08F4B"
+            }
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/items/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "items07D08F4B"
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/getOneItemFunction/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "getOneItemFunctionServiceRoleCFD54796"
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/getOneItemFunction/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "getOneItemFunctionServiceRoleDefaultPolicy6B743AA8"
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/getOneItemFunction/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "getOneItemFunctionE3257B22"
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/getAllItemsFunction/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "getAllItemsFunctionServiceRoleCC084440"
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/getAllItemsFunction/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "getAllItemsFunctionServiceRoleDefaultPolicyF069C759"
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/getAllItemsFunction/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "getAllItemsFunction0B7A913E"
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/createItemFunction/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "createItemFunctionServiceRole1BBF2178"
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/createItemFunction/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "createItemFunctionServiceRoleDefaultPolicy8FAF1611"
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/createItemFunction/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "createItemFunction8D47E48A"
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/updateItemFunction/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "updateItemFunctionServiceRole40035396"
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/updateItemFunction/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "updateItemFunctionServiceRoleDefaultPolicy6A793729"
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/updateItemFunction/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "updateItemFunction59415205"
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/deleteItemFunction/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "deleteItemFunctionServiceRole5C201FCC"
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/deleteItemFunction/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "deleteItemFunctionServiceRoleDefaultPolicyDCE46F14"
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/deleteItemFunction/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "deleteItemFunction2918B1B0"
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/itemsApi/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "itemsApi28111E1C"
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/itemsApi/CloudWatchRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "itemsApiCloudWatchRoleB5C7B431"
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/itemsApi/Account": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "itemsApiAccount591BF3E1"
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/itemsApi/Deployment/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "itemsApiDeploymentFEC31BD04feb54db86e2f8eed94e1b28001143ce"
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/itemsApi/DeploymentStage.prod/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "itemsApiDeploymentStageprodE77B897D"
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/itemsApi/Endpoint": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "itemsApiEndpoint8392E274"
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/itemsApi/Default/items/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "itemsApiitems9015DBED"
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/itemsApi/Default/items/GET/ApiPermission.ApiLambdaCrudDynamoDBExampleitemsApiC8514132.GET..items": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "itemsApiitemsGETApiPermissionApiLambdaCrudDynamoDBExampleitemsApiC8514132GETitems2A648972"
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/itemsApi/Default/items/GET/ApiPermission.Test.ApiLambdaCrudDynamoDBExampleitemsApiC8514132.GET..items": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "itemsApiitemsGETApiPermissionTestApiLambdaCrudDynamoDBExampleitemsApiC8514132GETitemsF4364FB2"
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/itemsApi/Default/items/GET/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "itemsApiitemsGET59B0F78A"
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/itemsApi/Default/items/POST/ApiPermission.ApiLambdaCrudDynamoDBExampleitemsApiC8514132.POST..items": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "itemsApiitemsPOSTApiPermissionApiLambdaCrudDynamoDBExampleitemsApiC8514132POSTitems7DA2B753"
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/itemsApi/Default/items/POST/ApiPermission.Test.ApiLambdaCrudDynamoDBExampleitemsApiC8514132.POST..items": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "itemsApiitemsPOSTApiPermissionTestApiLambdaCrudDynamoDBExampleitemsApiC8514132POSTitemsAE25CBB6"
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/itemsApi/Default/items/POST/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "itemsApiitemsPOSTDD3E83D0"
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/itemsApi/Default/items/OPTIONS/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "itemsApiitemsOPTIONSB46B4D53"
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/itemsApi/Default/items/{id}/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "itemsApiitemsidA29927C2"
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/itemsApi/Default/items/{id}/GET/ApiPermission.ApiLambdaCrudDynamoDBExampleitemsApiC8514132.GET..items.{id}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "itemsApiitemsidGETApiPermissionApiLambdaCrudDynamoDBExampleitemsApiC8514132GETitemsid6D54AF22"
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/itemsApi/Default/items/{id}/GET/ApiPermission.Test.ApiLambdaCrudDynamoDBExampleitemsApiC8514132.GET..items.{id}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "itemsApiitemsidGETApiPermissionTestApiLambdaCrudDynamoDBExampleitemsApiC8514132GETitemsidCA08693A"
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/itemsApi/Default/items/{id}/GET/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "itemsApiitemsidGET38A333A8"
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/itemsApi/Default/items/{id}/PATCH/ApiPermission.ApiLambdaCrudDynamoDBExampleitemsApiC8514132.PATCH..items.{id}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "itemsApiitemsidPATCHApiPermissionApiLambdaCrudDynamoDBExampleitemsApiC8514132PATCHitemsidEE9531C0"
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/itemsApi/Default/items/{id}/PATCH/ApiPermission.Test.ApiLambdaCrudDynamoDBExampleitemsApiC8514132.PATCH..items.{id}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "itemsApiitemsidPATCHApiPermissionTestApiLambdaCrudDynamoDBExampleitemsApiC8514132PATCHitemsid513A5711"
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/itemsApi/Default/items/{id}/PATCH/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "itemsApiitemsidPATCH0548CB6A"
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/itemsApi/Default/items/{id}/DELETE/ApiPermission.ApiLambdaCrudDynamoDBExampleitemsApiC8514132.DELETE..items.{id}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "itemsApiitemsidDELETEApiPermissionApiLambdaCrudDynamoDBExampleitemsApiC8514132DELETEitemsid056EB521"
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/itemsApi/Default/items/{id}/DELETE/ApiPermission.Test.ApiLambdaCrudDynamoDBExampleitemsApiC8514132.DELETE..items.{id}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "itemsApiitemsidDELETEApiPermissionTestApiLambdaCrudDynamoDBExampleitemsApiC8514132DELETEitemsid4C18D4E2"
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/itemsApi/Default/items/{id}/DELETE/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "itemsApiitemsidDELETE21550005"
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/itemsApi/Default/items/{id}/OPTIONS/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "itemsApiitemsidOPTIONS62BD91D0"
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "ApiLambdaCrudDynamoDBExample"
+    },
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    }
+  }
+}
