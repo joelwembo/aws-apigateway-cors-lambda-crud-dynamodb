@@ -42,9 +42,16 @@ jobs:
       - name: Build CDK Stack
         run: npm run build
 
-      - name: Deploy AWS CDK Stack
-        run: "npx cdk deploy --ci --require-approval never --no-asset-metadata"
+      # - name: Deploy AWS CDK Stack
+      #   run: "npx cdk deploy --ci --require-approval never --no-asset-metadata"
+      #   env:
+      #     AWS_ACCESS_KEY_ID: ${{ env.AWS_ACCESS_KEY_ID }}
+      #     AWS_SECRET_ACCESS_KEY: ${{ env.AWS_SECRET_ACCESS_KEY }}
+      #     AWS_DEFAULT_REGION: ${{ env.AWS_DEFAULT_REGION}}
+
+      - name: Destroy AWS CDK Stack
+        run: "npx cdk destroy --ci --require-approval never --no-asset-metadata"
         env:
-          AWS_ACCESS_KEY_ID: ${{ env.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ env.AWS_SECRET_ACCESS_KEY }}
-          AWS_DEFAULT_REGION: ${{ env.AWS_DEFAULT_REGION}}
+            AWS_ACCESS_KEY_ID: ${{ env.AWS_ACCESS_KEY_ID }}
+            AWS_SECRET_ACCESS_KEY: ${{ env.AWS_SECRET_ACCESS_KEY }}
+            AWS_DEFAULT_REGION: ${{ env.AWS_DEFAULT_REGION}}     

@@ -115,7 +115,7 @@
      "S3Bucket": {
       "Fn::Sub": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}"
      },
-     "S3Key": "f306e46d63e74e566462d9ae03f3f272fe9cbefa3f43560bc9324aaa16b8d50a.zip"
+     "S3Key": "12f8676ca2a491fd4b31e75f22627db3b16bad203c9e8d5c215f3964eae50fbd.zip"
     },
     "Environment": {
      "Variables": {
@@ -141,7 +141,7 @@
    ],
    "Metadata": {
     "aws:cdk:path": "ApiLambdaCrudDynamoDBExample/getOneItemFunction/Resource",
-    "aws:asset:path": "asset.f306e46d63e74e566462d9ae03f3f272fe9cbefa3f43560bc9324aaa16b8d50a",
+    "aws:asset:path": "C:\\Users\\joelw\\Desktop\\Office\\production\\prodxcloud\\prodxcloud-operations\\aws-cdk\\api-cors-lambda-crud-dynamodb\\lambdas",
     "aws:asset:is-bundled": true,
     "aws:asset:property": "Code"
    }
@@ -234,7 +234,7 @@
      "S3Bucket": {
       "Fn::Sub": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}"
      },
-     "S3Key": "d3b9bc9cf7d93072f6ac7c9afa7bbc109d6728cafc88e1b2ff8685dbbc215a78.zip"
+     "S3Key": "70a5e435d1f2f3f5d1f3f5c08b267b93d8d3a9b71fcc3305951574c83d3041c3.zip"
     },
     "Environment": {
      "Variables": {
@@ -260,7 +260,7 @@
    ],
    "Metadata": {
     "aws:cdk:path": "ApiLambdaCrudDynamoDBExample/getAllItemsFunction/Resource",
-    "aws:asset:path": "asset.d3b9bc9cf7d93072f6ac7c9afa7bbc109d6728cafc88e1b2ff8685dbbc215a78",
+    "aws:asset:path": "C:\\Users\\joelw\\Desktop\\Office\\production\\prodxcloud\\prodxcloud-operations\\aws-cdk\\api-cors-lambda-crud-dynamodb\\lambdas",
     "aws:asset:is-bundled": true,
     "aws:asset:property": "Code"
    }
@@ -353,7 +353,7 @@
      "S3Bucket": {
       "Fn::Sub": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}"
      },
-     "S3Key": "f620561cee12d5d1ee6e43d6905e4a8403bd5e0ae3a1f48a87ee8d586d5e1585.zip"
+     "S3Key": "bdf17ab4c0c32f5a11c4788b120c3a1c11173f80b461c35573f1da34214f784b.zip"
     },
     "Environment": {
      "Variables": {
@@ -379,7 +379,7 @@
    ],
    "Metadata": {
     "aws:cdk:path": "ApiLambdaCrudDynamoDBExample/createItemFunction/Resource",
-    "aws:asset:path": "asset.f620561cee12d5d1ee6e43d6905e4a8403bd5e0ae3a1f48a87ee8d586d5e1585",
+    "aws:asset:path": "C:\\Users\\joelw\\Desktop\\Office\\production\\prodxcloud\\prodxcloud-operations\\aws-cdk\\api-cors-lambda-crud-dynamodb\\lambdas",
     "aws:asset:is-bundled": true,
     "aws:asset:property": "Code"
    }
@@ -472,7 +472,7 @@
      "S3Bucket": {
       "Fn::Sub": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}"
      },
-     "S3Key": "45bed467f5ab10a2c75d61d43194db772557576029f261e92376a85873877b27.zip"
+     "S3Key": "d4a93223321a513ef48d234032e9577c56814c8f6d16c3ab72dad10cc2f06863.zip"
     },
     "Environment": {
      "Variables": {
@@ -498,7 +498,7 @@
    ],
    "Metadata": {
     "aws:cdk:path": "ApiLambdaCrudDynamoDBExample/updateItemFunction/Resource",
-    "aws:asset:path": "asset.45bed467f5ab10a2c75d61d43194db772557576029f261e92376a85873877b27",
+    "aws:asset:path": "C:\\Users\\joelw\\Desktop\\Office\\production\\prodxcloud\\prodxcloud-operations\\aws-cdk\\api-cors-lambda-crud-dynamodb\\lambdas",
     "aws:asset:is-bundled": true,
     "aws:asset:property": "Code"
    }
@@ -591,7 +591,7 @@
      "S3Bucket": {
       "Fn::Sub": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}"
      },
-     "S3Key": "d56eb17a2c05c570bf5878bad90dbe1fa174e21c70c13d5763d149ce36405410.zip"
+     "S3Key": "a6ef77547e3761e82bfc427cdc7da854d33d0d78a1767d490e18c52c352e5610.zip"
     },
     "Environment": {
      "Variables": {
@@ -617,7 +617,7 @@
    ],
    "Metadata": {
     "aws:cdk:path": "ApiLambdaCrudDynamoDBExample/deleteItemFunction/Resource",
-    "aws:asset:path": "asset.d56eb17a2c05c570bf5878bad90dbe1fa174e21c70c13d5763d149ce36405410",
+    "aws:asset:path": "C:\\Users\\joelw\\Desktop\\Office\\production\\prodxcloud\\prodxcloud-operations\\aws-cdk\\api-cors-lambda-crud-dynamodb\\lambdas",
     "aws:asset:is-bundled": true,
     "aws:asset:property": "Code"
    }
